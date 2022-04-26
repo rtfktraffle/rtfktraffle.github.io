@@ -16,3 +16,13 @@
 body {
     background-color: #ab99fa;
 }
+
+@media (max-width: 575px) {
+    .header-play {
+        display: flex;
+        justify-content: center;
+    }
+    .hero-title, .bio {
+        text-align: center;
+    }
+}
