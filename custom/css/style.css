@@ -1,3 +1,29 @@
+@font-face {
+    font-family: rtfkt-icons;
+    src: url(../fonts/rtfkt-icons.ttf) format("truetype"),
+    url(../fonts/rtfkt-icons.woff) format("woff"),
+    url(https://cdn-staging.rtfkt.com/assets/fonts/rtfkt-icons.svg?i1igp5#rtfkt-icons) format("svg");
+    font-weight:400;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: alienzwar;
+    src: url(../fonts/TT_Alientz_Var.ttf)
+}
+
+@font-face {
+    font-family: Sohne;
+    font-weight: 400;
+    src: url(../fonts/Sohne-Buch.otf) format("opentype")
+}
+
+@font-face {
+    font-family: Sohne Breit;
+    src: url(../fonts/SohneBreit-Buch.otf);
+}
+
 .custom-btn {
     background-color: #5733f5;
     width: 13rem;
@@ -14,7 +40,32 @@
 }
 
 body {
-    background-color: #ab99fa;
+    background-color: #1f2028;
+}
+
+.rtfkt-footer {
+    padding-top: 10rem;
+}
+
+.subtitle {
+    color: #5733f5;
+    font-family: Sohne Breit!important;
+    font-weight: 700!important;
+    letter-spacing: 1.6px!important;
+}
+
+.main-title {
+    color: white;
+}
+
+.main-title, .subtitle {
+    font-family: Sohne;
+}
+
+.text-tertiary {
+    font-family: alienzwar;
+    font-style: normal;
+    font-variation-settings: "DSPL" 500;
 }
 
 @media (max-width: 575px) {
@@ -22,7 +73,7 @@ body {
         display: flex;
         justify-content: center;
     }
-    .hero-title, .bio {
+    .hero-title, .bio, .main-title, .subtitle {
         text-align: center;
     }
 }
